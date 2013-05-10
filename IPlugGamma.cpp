@@ -56,8 +56,8 @@ void IPlugGamma::ProcessDoubleReplacing(double** inputs, double** outputs, int n
 
   for (int s = 0; s < nFrames; ++s, ++in1, ++in2, ++out1, ++out2)
   {
-    *out1 = *in1 * mGain;
-    *out2 = *in2 * mGain;
+    *out1 = white()*0.4*mGain;
+    *out2 = white()*0.4*mGain;
   }
 }
 
@@ -65,6 +65,8 @@ void IPlugGamma::Reset()
 {
   TRACE;
   IMutexLock lock(this);
+  
+  Sync::master().spu(GetSampleRate());
 }
 
 void IPlugGamma::OnParamChange(int paramIdx)
