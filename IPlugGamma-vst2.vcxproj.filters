@@ -5,12 +5,165 @@
     <ClCompile Include="..\..\WDL\IPlug\IPlugVST.cpp">
       <Filter>vst2</Filter>
     </ClCompile>
+    <ClCompile Include="Gamma\src\arr.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\Conversion.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\DFT.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\Domain.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\FFT_fftpack.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\fftpack++1.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\fftpack++2.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\File.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\Print.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\Recorder.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamma\src\scl.cpp">
+      <Filter>Gamma\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IPlugGamma.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="..\..\WDL\IPlug\IPlugVST.h">
       <Filter>vst2</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Access.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Allocator.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Analysis.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\arr.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Config.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Constants.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Containers.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Conversion.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Delay.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\DFT.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Domain.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Effects.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Envelope.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\FFT.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\File.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Filter.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\FormantData.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Gamma.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\gen.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\ipl.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\mem.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Node.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Noise.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Oscillator.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Print.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\pstdint.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Recorder.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\rnd.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\SamplePlayer.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\scl.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Spatial.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Strategy.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Sync.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\tbl.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Thread.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Timer.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\TransferFunc.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\Types.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\Gamma\UnitMaps.h">
+      <Filter>Gamma\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma\src\fftpack++.h">
+      <Filter>Gamma\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -20,5 +173,19 @@
     <Filter Include="vst2">
       <UniqueIdentifier>{ea16de74-9d15-4c60-ba09-d0924088d3e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gamma">
+      <UniqueIdentifier>{91be135e-fa91-43d6-a989-aa265fcb91ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gamma\src">
+      <UniqueIdentifier>{726931ae-9eeb-4af7-b733-67453cc1168d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gamma\include">
+      <UniqueIdentifier>{f799492d-6863-44cf-ab99-be5d5190663d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gamma\src\fftpack++.inc">
+      <Filter>Gamma\src</Filter>
+    </None>
   </ItemGroup>
 </Project>

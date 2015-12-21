@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="PaceFixLogs" AssemblyFile="$(PACE_FUSION_HOME)PaceFusionUi2013.dll" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -34,21 +35,27 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -445,6 +452,17 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <ClCompile Include="..\..\WDL\IPlug\AAX\AAX_CIPlugParameters.cpp" />
     <ClCompile Include="..\..\WDL\IPlug\IPlugAAX.cpp" />
     <ClCompile Include="..\..\WDL\IPlug\AAX\IPlugAAX_Describe.cpp" />
+    <ClCompile Include="Gamma\src\arr.cpp" />
+    <ClCompile Include="Gamma\src\Conversion.cpp" />
+    <ClCompile Include="Gamma\src\DFT.cpp" />
+    <ClCompile Include="Gamma\src\Domain.cpp" />
+    <ClCompile Include="Gamma\src\fftpack++1.cpp" />
+    <ClCompile Include="Gamma\src\fftpack++2.cpp" />
+    <ClCompile Include="Gamma\src\FFT_fftpack.cpp" />
+    <ClCompile Include="Gamma\src\File.cpp" />
+    <ClCompile Include="Gamma\src\Print.cpp" />
+    <ClCompile Include="Gamma\src\Recorder.cpp" />
+    <ClCompile Include="Gamma\src\scl.cpp" />
     <ClCompile Include="IPlugGamma.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -495,6 +513,46 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <ClInclude Include="..\..\WDL\IPlug\Log.h" />
     <ClInclude Include="..\..\WDL\IPlug\AAX\AAX_CIPlugParameters.h" />
     <ClInclude Include="..\..\WDL\IPlug\IPlugAAX.h" />
+    <ClInclude Include="Gamma\Gamma\Access.h" />
+    <ClInclude Include="Gamma\Gamma\Allocator.h" />
+    <ClInclude Include="Gamma\Gamma\Analysis.h" />
+    <ClInclude Include="Gamma\Gamma\arr.h" />
+    <ClInclude Include="Gamma\Gamma\Config.h" />
+    <ClInclude Include="Gamma\Gamma\Constants.h" />
+    <ClInclude Include="Gamma\Gamma\Containers.h" />
+    <ClInclude Include="Gamma\Gamma\Conversion.h" />
+    <ClInclude Include="Gamma\Gamma\Delay.h" />
+    <ClInclude Include="Gamma\Gamma\DFT.h" />
+    <ClInclude Include="Gamma\Gamma\Domain.h" />
+    <ClInclude Include="Gamma\Gamma\Effects.h" />
+    <ClInclude Include="Gamma\Gamma\Envelope.h" />
+    <ClInclude Include="Gamma\Gamma\FFT.h" />
+    <ClInclude Include="Gamma\Gamma\File.h" />
+    <ClInclude Include="Gamma\Gamma\Filter.h" />
+    <ClInclude Include="Gamma\Gamma\FormantData.h" />
+    <ClInclude Include="Gamma\Gamma\Gamma.h" />
+    <ClInclude Include="Gamma\Gamma\gen.h" />
+    <ClInclude Include="Gamma\Gamma\ipl.h" />
+    <ClInclude Include="Gamma\Gamma\mem.h" />
+    <ClInclude Include="Gamma\Gamma\Node.h" />
+    <ClInclude Include="Gamma\Gamma\Noise.h" />
+    <ClInclude Include="Gamma\Gamma\Oscillator.h" />
+    <ClInclude Include="Gamma\Gamma\Print.h" />
+    <ClInclude Include="Gamma\Gamma\pstdint.h" />
+    <ClInclude Include="Gamma\Gamma\Recorder.h" />
+    <ClInclude Include="Gamma\Gamma\rnd.h" />
+    <ClInclude Include="Gamma\Gamma\SamplePlayer.h" />
+    <ClInclude Include="Gamma\Gamma\scl.h" />
+    <ClInclude Include="Gamma\Gamma\Spatial.h" />
+    <ClInclude Include="Gamma\Gamma\Strategy.h" />
+    <ClInclude Include="Gamma\Gamma\Sync.h" />
+    <ClInclude Include="Gamma\Gamma\tbl.h" />
+    <ClInclude Include="Gamma\Gamma\Thread.h" />
+    <ClInclude Include="Gamma\Gamma\Timer.h" />
+    <ClInclude Include="Gamma\Gamma\TransferFunc.h" />
+    <ClInclude Include="Gamma\Gamma\Types.h" />
+    <ClInclude Include="Gamma\Gamma\UnitMaps.h" />
+    <ClInclude Include="Gamma\src\fftpack++.h" />
     <ClInclude Include="IPlugGamma.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -529,7 +587,15 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'">true</ExcludedFromBuild>
     </Library>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Gamma\src\fftpack++.inc">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <Target Name="AfterBuild">
+    <PaceFixLogs Condition="Exists('$(PACE_FUSION_HOME)PaceFusionUi2013.dll')" LogDirectory="$(IntDir)" />
+  </Target>
 </Project>
